@@ -47,16 +47,25 @@ a {
   border-radius: 12px;
 }
 
-.header {
+.hero-wrap {
   height: 100vh;
   background-color: #e6f0ff;
   position: relative;
 }
 
+.fixed-header {
+  background-color: #e6f0ff;
+  padding-top: 20px;
+  position: sticky;
+  top: -20px;
+  z-index: 1;
+}
+
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 38px; */
+  padding: 12px 0;
 }
 
 .navbar > ul {
@@ -92,7 +101,7 @@ a {
 }
 
 .hero {
-  margin-top: 28rem;
+  padding-top: 28rem;
 }
 
 .hero .info {
