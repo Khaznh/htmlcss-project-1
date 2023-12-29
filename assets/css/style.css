@@ -53,9 +53,12 @@ a {
 }
 
 .hero-wrap {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background-color: #e6f0ff;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-header {
@@ -105,15 +108,15 @@ a {
   border-radius: 8px;
 }
 
-.hero {
+/* .hero {
   padding-top: 28rem;
-}
+} */
 
-.hero .info {
+.hero-wrap .info {
   width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
   color: #687690;
   font-size: 1.8rem;
   font-weight: 500;
@@ -121,7 +124,7 @@ a {
   letter-spacing: 0.18px;
 }
 
-.hero .title {
+.hero-wrap .title {
   margin-top: 20px;
   color: #000336;
   font-size: 6.35rem;
@@ -129,7 +132,7 @@ a {
   line-height: 1.19; /* 118.75% */
 }
 
-.hero .desc {
+.hero-wrap .desc {
   margin-top: 50px;
   color: #5a6473;
   font-size: 1.8rem;
@@ -137,12 +140,12 @@ a {
   line-height: 32px;
 }
 
-.hero .hero-cta {
+.hero-wrap .hero-cta {
   min-width: 170px;
   margin-top: 4rem;
 }
 
-.hero .hero-img {
+.hero-wrap .hero-img {
   width: calc(548px * 1.8);
   height: calc(619px * 1.8);
   position: absolute;
